@@ -1,0 +1,133 @@
+@media screen and (min-width: 1056px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (max-width: 1056px) and (min-width: 929px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 929px) and (min-width: 879px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 879px) and (min-width: 844px) {
+  html {
+    font-size: 47%;
+  }
+}
+@media (max-width: 844px) and (min-width: 794px) {
+  html {
+    font-size: 47%;
+  }
+}
+@media (max-width: 794px) and (min-width: 726px) {
+  html {
+    font-size: 43%;
+  }
+}
+@media (max-width: 726px) and (min-width: 675px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 675px) and (min-width: 608px) {
+  html {
+    font-size: 36%;
+  }
+}
+@media (max-width: 608px) {
+  .indexctnr {
+    height: 200%;
+    width: 100%;
+  }
+
+  .area {
+    height: 200%;
+  }
+
+  .subCtnr {
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .header {
+    height: 10vh;
+  }
+
+  .left {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-height: 100vh;
+    overflow-y: scroll;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .indexTopLeftRoomsName {
+    margin-top: 2rem;
+    overflow-y: scroll;
+  }
+
+  .indexTopLeftRoomsName .roomBlock {
+    margin: 2rem;
+  }
+
+  .right {
+    height: 90vh;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .indexTopRightUserName {
+    width: 80%;
+    height: 50vh;
+  }
+
+  .indexBottomRightNext {
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+}
+@media (max-width: 608px) and (min-width: 529px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 529px) and (min-width: 471px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 471px) and (min-width: 427px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 427px) and (min-width: 375px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media (max-width: 375px) and (min-width: 337px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 337px) and (min-width: 290px) {
+  html {
+    font-size: 35%;
+  }
+}
+@media (max-width: 290px) {
+  html {
+    font-size: 35%;
+  }
+}/*# sourceMappingURL=main.css.map */

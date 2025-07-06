@@ -1,0 +1,12 @@
+.no_Display_videoDiv #videoDiv {
+  height: 0;
+  width: 0;
+}
+
+.max_width_mainNav .mainNav {
+  width: 100%;
+}
+
+.subCtnr_Diaplay .subCtnr, .subCtnr_Diaplay .chatBox {
+  display: flex;
+}/*# sourceMappingURL=main.css.map */

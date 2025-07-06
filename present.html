@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Alfa+Slab+One&family=Amaranth&family=Creepster&family=Fredoka+One&family=Indie+Flower&family=Lato&family=Luckiest+Guy&family=Readex+Pro&family=Rubik+Beastly&family=Source+Serif+Pro:ital,wght@1,900&family=Titan+One&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="/public/chatBoxCSS/bgAnim.css" />
+    <link rel="stylesheet" href="/public/chatBoxCSS/srchBar.css" /> -->
+
+    <link rel="stylesheet" href="/public/presentCSS/home.css" />
+  <link rel="stylesheet" href="/public/presentCSS/bgAnim.css" />
+  <link rel="stylesheet" href="/public/presentCSS/srchBar.css" />
+  <link rel="stylesheet" href="/public/presentCSS/presentButtons.css" />
+    <title>Home</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      .indexctnr {
+        height: 100vh;
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .header {
+        height: 20%;
+        width: 100%;
+        /* background-color: tomato; */
+      }
+      .subCtnr {
+        height: 80%;
+        width: 100%;
+        /* background-color: violet; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .left {
+        width: 60%;
+        height: 100%;
+        /* background-color: rgb(213, 224, 64); */
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+      .indexTopLeftRooms {
+        height: 100%;
+        width: 100%;
+        /* background-color: wheat; */
+        /* background: linear-gradient(180deg , #03a8f4af ,rgba(255, 255, 255, 0)); */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+
+      .indexTopLeftHeadingRooms {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        /* justify-content: space-evenly; */
+        justify-content: space-between;
+
+        color: white;
+        background-color: #03a9f4;
+        border-radius: 1.5rem;
+        font-family: "Readex Pro", sans-serif;
+      }
+      .indexTopLeftHeadingRooms h1 {
+        margin-left: 1rem;
+      }
+      .indexTopLeftRoomsName {
+        width: 100%;
+        height: 85%;
+        /* background-color: rgb(214, 38, 88); */
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+      }
+      .indexTopLeftRoomsName::-webkit-scrollbar {
+        display: none;
+      }
+      .indexTopLeftRoomsName {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      a {
+        text-decoration: none;
+        color: #ffffff;
+
+        height: 100%;
+        width: 100%;
+        display: flex;
+
+        justify-content: center;
+      }
+      .indexTopLeftRoomsName .roomBlock {
+        height: 10rem;
+        width: 30rem;
+        border-radius: 1.5rem;
+        margin: 1rem;
+        /* background-color: rgb(255, 255, 0); */
+        background: #03a8f43a;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+        backdrop-filter: blur(0.5rem);
+      }
+      .indexTopLeftRoomsName .roomBlock .roomName {
+        height: 100%;
+        width: 70%;
+        font-family: "Abhaya Libre", serif;
+        /* background-color: turquoise; */
+      }
+      .indexTopLeftRoomsName .roomBlock .roomName h1 {
+        height: 35%;
+        width: 100%;
+        /* margin-top: 0.7rem; */
+        text-align: center;
+        font-size: 2.5rem;
+        overflow: hidden;
+        display: inline-block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        /* background-color: turquoise; */
+        margin-left: 0.7rem;
+      }
+      .indexTopLeftRoomsName .roomBlock .roomName .roomJoinBtn {
+        height: 65%;
+        width: 100%;
+
+        /* background-color: tomato; */
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        padding-top: 1rem;
+      }
+      .indexTopLeftRoomsName .roomBlock .roomName .roomJoinBtn button {
+        height: 3rem;
+        width: 12rem;
+        /* margin-bottom: 1.5rem; */
+        /* margin-top: -2rem; */
+      }
+      .indexTopLeftRoomsName .roomBlock .noOfUsers {
+        height: 100%;
+        width: 30%;
+        /* background-color: thistle; */
+        text-align: center;
+      }
+      .indexTopLeftRoomsName .roomBlock .noOfUsers i {
+        height: 60%;
+        width: 100%;
+        /* margin-top: 1rem; */
+        /* margin-right: 2rem; */
+        /* background-color: tomato; */
+      }
+      .indexTopLeftRoomsName .roomBlock .noOfUsers h2 {
+        height: 40%;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: -1rem;
+      }
+
+      /* .indexBottomLeftCreateRooms {
+        height: 11rem;
+        width: 100%;
+        background-color: rgb(80, 64, 224);
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      } */
+
+      .right {
+        width: 40%;
+        height: 100%;
+        /* background-color: rgb(64, 224, 91); */
+        padding: 1rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+      .indexTopRightUserName {
+        height: 70%;
+        width: 100%;
+        /* background-color: yellowgreen; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        color: white;
+      }
+      .indexTopRightUserName {
+        box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.5);
+        border-radius: 1.5rem;
+        background: rgba(255, 255, 255, 0.1);
+
+        /* font-family: 'Alfa Slab One', cursive; */
+        /* font-family: 'Luckiest Guy', cursive; */
+        font-family: "Source Serif Pro", serif;
+        /* font-family: serif; */
+        font-weight: 800;
+        font-size: 1.5rem;
+        /* text-transform: uppercase; */
+        /* letter-spacing:0.2rem; */
+        border-top: 0.1rem solid rgba(255, 255, 255, 0.5);
+        border-left: 0.1rem solid rgba(255, 255, 255, 0.5);
+
+        /* to make blur */
+        backdrop-filter: blur(0.5rem);
+        /* top: 80px; */
+        /* right: -60px; */
+      }
+      /* .indexTopRightUserName h1 { */
+      /* text-transform: uppercase; */
+      /* } */
+      .indexTopRightUserName span {
+        font-family: "Material Icons";
+        font-size: 12rem;
+        /* color: white; */
+      }
+      .indexTopRightUserName input {
+        outline: none;
+        background: none;
+        border: none;
+        /* border-bottom: 1px solid rgb(255, 255, 255); */
+        width: 30rem;
+        height: 4rem;
+        text-align: center;
+
+        /* font-family: 'Indie Flower', cursive; */
+        /* font-family: 'Titan One', cursive; */
+        /* font-family: 'Creepster', cursive; */
+        /* background-color: aquamarine; */
+        /* font-family: 'Alfa Slab One', cursive; */
+        font-family: "Amaranth", sans-serif;
+        /* font-family: 'Source Serif Pro', serif; */
+        font-weight: 100;
+        /* color: #03a9f4; */
+        color: white;
+      }
+      #indexTopRightUserNameInput {
+        font-size: 3rem;
+      }
+      .indexBottomRightNext {
+        height: 30%;
+        width: 100%;
+        /* background-color: rgb(205, 50, 197); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .indexBottomRightNext header {
+        font-size: 3rem;
+        /* font-family: "Alfa Slab One", cursive; */
+        font-family: "Source Serif Pro", serif;
+        color: #ffffff;
+      }
+      .indexBottomRightNext input {
+        height: 4rem;
+        width: 20rem;
+        margin-right: 5rem;
+        border-radius: 1.5rem;
+        outline: none;
+        /* background: none; */
+        border: none;
+        /* border-bottom: 0.5rem solid white; */
+        text-align: center;
+        /* color: white; */
+        padding-left: 1rem;
+        font-size: 2rem;
+        /* padding: 3rem; */
+        /* font-size: 3rem; */
+        font-family: "Amaranth", sans-serif;
+      }
+
+      /* button */
+      .button {
+        background: #03a9f4;
+
+        border: 0;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.6rem 0 #2090b7, 0 0.5rem 10.5rem -0.4rem #000;
+        color: #fff;
+        cursor: pointer;
+        font-family: roboto;
+        font-size: 2rem;
+        font-weight: 800;
+        height: 5rem;
+        padding: 0.5rem;
+        text-transform: uppercase;
+        transition: box-shadow 0.2s ease-in-out, margin-top 0.2s ease-in-out,
+          opacity 0.2s ease-in-out;
+        width: 15rem;
+      }
+
+      .button:hover,
+      .button:focus {
+        opacity: 0.9;
+        outline: 0;
+      }
+
+      .button:active {
+        box-shadow: none;
+        margin-top: 0.6rem;
+      }
+
+      /* srch bar */
+
+      /* bg animations */
+
+      @media screen and (min-width: 1056px) {
+        html {
+          font-size: 62.5%;
+        }
+      }
+      @media (max-width: 1056px) and (min-width: 929px) {
+        html {
+          font-size: 55%;
+        }
+      }
+      @media (max-width: 929px) and (min-width: 879px) {
+        html {
+          font-size: 50%;
+        }
+      }
+      @media (max-width: 879px) and (min-width: 844px) {
+        html {
+          font-size: 47%;
+        }
+      }
+      @media (max-width: 844px) and (min-width: 794px) {
+        html {
+          font-size: 47%;
+        }
+      }
+      @media (max-width: 794px) and (min-width: 726px) {
+        html {
+          font-size: 43%;
+        }
+      }
+      @media (max-width: 726px) and (min-width: 675px) {
+        html {
+          font-size: 40%;
+        }
+      }
+      @media (max-width: 675px) and (min-width: 608px) {
+        html {
+          font-size: 36%;
+        }
+      }
+      @media (max-width: 608px) {
+        .indexctnr {
+          height: 200%;
+          width: 100%;
+        }
+        .area {
+          height: 200%;
+        }
+        .subCtnr {
+          width: 100%;
+
+          overflow: scroll;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          flex-direction: column-reverse;
+        }
+        .header {
+          height: 10vh;
+        }
+        .left {
+          height: fit-content;
+          max-height: 100vh;
+          overflow-y: scroll;
+          width: 100%;
+          padding: 1rem;
+        }
+        .indexTopLeftRoomsName {
+          margin-top: 2rem;
+          overflow-y: scroll;
+          /* overflow: scroll; */
+        }
+        .indexTopLeftRoomsName .roomBlock {
+          margin: 2rem;
+        }
+
+        .right {
+          height: 90vh;
+          width: 100%;
+
+          justify-content: space-evenly;
+        }
+        .indexTopRightUserName {
+          width: 80%;
+          height: 50vh;
+        }
+
+        .indexBottomRightNext {
+          justify-content: space-evenly;
+          flex-direction: column;
+        }
+      }
+      @media (max-width: 608px) and (min-width: 529px) {
+        html {
+          font-size: 60%;
+        }
+      }
+      @media (max-width: 529px) and (min-width: 471px) {
+        html {
+          font-size: 55%;
+        }
+      }
+      @media (max-width: 471px) and (min-width: 427px) {
+        html {
+          font-size: 50%;
+        }
+      }
+      @media (max-width: 427px) and (min-width: 375px) {
+        html {
+          font-size: 45%;
+        }
+      }
+      @media (max-width: 375px) and (min-width: 337px) {
+        html {
+          font-size: 40%;
+        }
+      }
+      @media (max-width: 337px) and (min-width: 290) {
+        html {
+          font-size: 35%;
+        }
+      }
+      @media (max-width: 290px) {
+        html {
+          font-size: 35%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="indexctnr">
+      <div class="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      
+      <div class="header">VMEET.com</div>
+      <div class="subCtnr">
+        <div class="left">
+          <div class="indexTopLeftRooms">
+            <div class="indexTopLeftHeadingRooms">
+              <h1>Search Your Rooms Here</h1>
+
+              <div class="search-box">
+                <button class="btn-search">
+                  <i class="material-icons">search</i>
+                </button>
+                <input
+                  type="text"
+                  class="input-search"
+                  placeholder="Type to Search..."
+                />
+              </div>
+            </div>
+            <div class="indexTopLeftRoomsName">
+              <!-- {{#each rooms }} -->
+              
+              <div class="roomBlock">
+                <div class="roomName">
+                  <h1>H4B</h1>
+
+                  <div class="roomJoinBtn">
+                    <button class="button"><a href="/{{.}}">join</a></button>
+                  </div>
+                </div>
+                <div class="noOfUsers">
+                  <i class="material-icons" style="font-size: 4.8rem">group</i>
+                  <h2>1</h2>
+                </div>
+              </div>
+              <div class="roomBlock">
+                <div class="roomName">
+                  <h1>CrossKnotHacks</h1>
+
+                  <div class="roomJoinBtn">
+                    <button class="button"><a href="/{{.}}">join</a></button>
+                  </div>
+                </div>
+                <div class="noOfUsers">
+                  <i class="material-icons" style="font-size: 4.8rem">group</i>
+                  <h2>4</h2>
+                </div>
+              </div>
+              <div class="roomBlock">
+                <div class="roomName">
+                  <h1>HackMoreish</h1>
+
+                  <div class="roomJoinBtn">
+                    <button class="button"><a href="/{{.}}">join</a></button>
+                  </div>
+                </div>
+                <div class="noOfUsers">
+                  <i class="material-icons" style="font-size: 4.8rem">group</i>
+                  <h2>5</h2>
+                </div>
+              </div>
+              <div class="roomBlock">
+                <div class="roomName">
+                  <h1>Holiday Hacks</h1>
+
+                  <div class="roomJoinBtn">
+                    <button class="button"><a href="/{{.}}">join</a></button>
+                  </div>
+                </div>
+                <div class="noOfUsers">
+                  <i class="material-icons" style="font-size: 4.8rem">group</i>
+                  <h2>2</h2>
+                </div>
+              </div>
+              <div class="roomBlock">
+                <div class="roomName">
+                  <h1>Firefly Hackathon</h1>
+
+                  <div class="roomJoinBtn">
+                    <button class="button"><a href="/{{.}}">join</a></button>
+                  </div>
+                </div>
+                <div class="noOfUsers">
+                  <i class="material-icons" style="font-size: 4.8rem">group</i>
+                  <h2>3</h2>
+                </div>
+              </div>
+              <div class="roomBlock">
+                <div class="roomName">
+                  <h1>ETHIndia Grants</h1>
+
+                  <div class="roomJoinBtn">
+                    <button class="button"><a href="/{{.}}">join</a></button>
+                  </div>
+                </div>
+                <div class="noOfUsers">
+                  <i class="material-icons" style="font-size: 4.8rem">group</i>
+                  <h2>4</h2>
+                </div>
+              </div>
+
+              <!-- {{/each}} -->
+            </div>
+          </div>
+          <!-- <div class="indexBottomLeftCreateRooms"> -->
+          <!-- <form method="post">
+              <input type="text" name="room" id="" required="true" />
+              <button type="submit" class="button">create</button>
+            </form> -->
+          <!-- </div> -->
+        </div>
+        <div class="right">
+          <div class="indexTopRightUserName">
+            <h1>Enter Your User Name Here</h1>
+
+            <span class="material-icons-outlined"> account_circle </span>
+
+            <input
+              type="text"
+              name=""
+              id="indexTopRightUserNameInput"
+              placeholder="user Name"
+              value="David"
+            />
+          </div>
+          <div class="indexBottomRightNext">
+            <header>Create Your Own Room</header>
+
+            <form action="/room" method="post">
+              <input type="text" name="room" id="" required="true" />
+              <button type="submit" class="button">create</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>

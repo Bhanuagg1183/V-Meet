@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/public/chatBoxCSS/particles.css" />
+    <!-- <link rel="stylesheet" href="/public/chatBoxCSS/chatBox.css"> -->
+    <link rel="stylesheet" href="/public/chatBoxCSS/newchatbox.css" />
+    <link rel="stylesheet" href="/public/chatBoxCSS/callLogs.css" />
+
+    <link rel="stylesheet" href="/public/chatBoxCSS/chatBoxResponsive.css" />
+    <link rel="stylesheet" href="/public/presentCSS/bgAnim.css" />
+    <link rel="stylesheet" href="/public/chatBoxCSS/chatIconToggle.css" />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="mainCtnr" id="mainCtnr">
+      <div class="mainNav" id="mainNav">
+        <h1 class="mainNavSiteName">siteName.com</h1>
+        <h1 class="mainNavWlcm">welcome to : {{roomname}}'s Room</h1>
+        <div class=" chatIcon ">
+          <div class="menu" id="menu">
+            <input type="checkbox" id="chatIcontoggle" onclick="chatIcon()" />
+            <label id="show-menu" for="chatIcontoggle">
+              <div class="btn">
+                <i class="material-icons toggleBtn menuBtn fix" id="callingLogo"
+                  >forum</i
+                >
+                <i
+                  class="material-icons toggleBtn closeBtn fix"
+                  id="callingLogoClose"
+                  >close</i
+                >
+              </div>
+            </label>
+          </div>
+          <!-- <h1> <i class="material-icons">forum</i></h1> -->
+        </div>
+      </div>
+
+      <div class="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+
+      <div id="videoDiv">
+        <video></video>
+        <video></video>
+        <video></video>
+        <video></video>
+        <video></video>
+        <!-- <video></video> -->
+        <!-- <video></video> -->
+      </div>
+      <div class="subCtnr" id="subCtnr">
+        <div id="particles-js">
+          <!-- <label class="toggle-control">
+            <input type="checkbox" onclick="setTimeout(mode , 150) " />
+            <span class="control"></span>
+          </label> -->
+        </div>
+
+        <div class="chatBox" id="chatBox">
+          <div class="nav">
+            <div class="backBtn">
+              <i class="material-icons" id="backBtn"> <a href="/">home</a></i>
+            </div>
+
+            <div class="chatRoomName" id="chatRoomName">
+              <p>{{roomName}}</p>
+            </div>
+
+            <div class="callLogs">
+              <div class="menu" id="menu">
+                <input
+                  type="checkbox"
+                  id="toggle"
+                  onclick="setTimeout(blurChatBox,850)"
+                />
+                <label id="show-menu" for="toggle">
+                  <div class="btn">
+                    <i
+                      class="material-icons toggleBtn menuBtn fix"
+                      id="callingLogo"
+                      >videocam</i
+                    >
+                    <i
+                      class="material-icons toggleBtn closeBtn fix"
+                      id="callingLogoClose"
+                      >videocam_off</i
+                    >
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="msgSection" id="msgSection">
+            <div class="outgoing message">
+              <p>Lorem lore lo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti aperiam minima magni delectus similique dolore incidunt sint soluta doloremque pariatur. Repellendus impedit temporibus hic ratione ut ipsam perspiciatis odio tempora..</p>
+            </div>
+
+            <div class="incoming message">
+              <h2>kunal</h2>
+              <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo placeat dolor inventore dolore id nihil, omnis accusamus. Vero rem, atque corrupti temporibus architecto saepe dolores repudiandae eaque ullam rerum dolorum.</p>
+            </div>
+          </div>
+
+          <div class="footer" id="footer">
+            <div class="mic">
+              <div class="menu">
+                <input type="checkbox" id="toggleMic" />
+                <label id="show-menu" for="toggleMic">
+                  <div class="btn">
+                    <i
+                      class="material-icons toggleBtn menuBtn fix"
+                      id="callingLogo"
+                      >mic</i
+                    >
+                    <i
+                      class="material-icons toggleBtn closeBtn fix"
+                      id="callingLogoClose"
+                      >mic_off</i
+                    >
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="textArea">
+              <textarea
+                name=""
+                id="textArea"
+                placeholder="message..."
+              ></textarea>
+            </div>
+            <div class="mic send">
+              <!-- <button id="send" onclick="sendMessage(message)"> -->
+
+              <i class="material-icons">rocket_launch</i>
+              <!-- </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- particles script code -->
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    {{!--
+    <script src="socket.io/socket.io.js" defer></script>
+    --}}
+    <!-- <script src="/public/particlesScript/particles.js"></script> -->
+    <!-- <script src="/public/particlesScript/stats.js"></script> -->
+    <!-- <script src="/public/particlesScript/app.js"></script> -->
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+    <script src="/common.js"></script>
+
+    <script>
+      //  var roomID = {{roomID}}
+
+      // function blurChatBox() {
+      //   var element = document.getElementById("msgSection");
+      //   element.classList.toggle("blur");
+      // }
+
+      function mode() {
+        var mainCtnr = document.getElementById("mainCtnr");
+        mainCtnr.classList.toggle("light-mode");
+
+        mainCtnr.classList.toggle("light-mode-particles");
+
+        mainCtnr.classList.toggle("light-mode-font");
+        mainCtnr.classList.toggle("light-mode-font-userName");
+        mainCtnr.classList.toggle("light-mode-msg-sec");
+        mainCtnr.classList.toggle("light-mode-textArea");
+        mainCtnr.classList.toggle("light-mode-userjoin-msg-chatRoomName");
+      }
+
+      function chatIcon() {
+        var mainCtnr = document.getElementById("mainCtnr");
+        mainCtnr.classList.toggle("no_Display_videoDiv");
+        mainCtnr.classList.toggle("max_width_mainNav");
+        mainCtnr.classList.toggle("subCtnr_Diaplay");
+      }
+    </script>
+  </body>
+</html>

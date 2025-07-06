@@ -1,0 +1,27 @@
+.button {
+  background: #03a9f4;
+  border: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.6rem 0 #2090b7, 0 0.5rem 10.5rem -0.4rem #000;
+  color: #fff;
+  cursor: pointer;
+  font-family: roboto;
+  font-size: 2rem;
+  font-weight: 800;
+  height: 5rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  transition: box-shadow 0.2s ease-in-out, margin-top 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  width: 15rem;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.9;
+  outline: 0;
+}
+
+.button:active {
+  box-shadow: none;
+  margin-top: 0.6rem;
+}/*# sourceMappingURL=main.css.map */

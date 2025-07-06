@@ -1,0 +1,772 @@
+@media screen and (min-width: 1292px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  video {
+    height: 24rem;
+    max-width: 40rem;
+    flex: 1;
+  }
+
+  .chatRoomName p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1022px) {
+  .chatIcon i {
+    font-size: 27px;
+  }
+
+  .subCtnr {
+    display: none;
+  }
+
+  .chatBox {
+    height: 100vh;
+    width: 30rem;
+  }
+
+  #videoDiv {
+    width: 100%;
+  }
+
+  .mainNav {
+    width: 100%;
+  }
+
+  .mainNav .material-icons {
+    visibility: visible;
+  }
+}
+@media (max-width: 1292px) and (min-width: 949px) {
+  html {
+    font-size: 55%;
+  }
+
+  video {
+    height: 24rem;
+    max-width: 35rem;
+    flex: 1;
+  }
+
+  .chatRoomName p {
+    font-size: 2rem;
+  }
+
+  .nav i {
+    height: 36px;
+    width: 36px;
+  }
+
+  .subCtnr {
+    width: 40rem;
+    height: 100vh;
+  }
+
+  .chatBox {
+    height: 57rem;
+    width: 26rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  #msgSection {
+    height: 43.3rem;
+    width: 100%;
+  }
+}
+@media (max-width: 949px) and (min-width: 724px) {
+  html {
+    font-size: 52%;
+  }
+
+  video {
+    height: 24rem;
+    max-width: 35rem;
+    flex: 1;
+  }
+
+  .footer {
+    width: 30rem;
+    margin-top: 15px;
+  }
+
+  .nav i,
+.nav i a {
+    font-size: 27px;
+  }
+
+  .nav p {
+    font-size: 15px;
+  }
+
+  .footer i {
+    font-size: 27px;
+  }
+
+  .footer textarea {
+    width: 500px;
+    height: 25px;
+    padding: 5px;
+  }
+
+  .subCtnr {
+    width: 40rem;
+    height: 100vh;
+  }
+
+  .chatBox {
+    height: 60rem;
+    width: 26rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  #msgSection {
+    height: 53.3rem;
+    width: 100%;
+  }
+}
+@media (max-width: 724px) and (min-width: 615px) {
+  html {
+    font-size: 48%;
+  }
+
+  video {
+    height: 24rem;
+    max-width: 35rem;
+    flex: 1;
+  }
+
+  .nav {
+    margin-top: 15px;
+  }
+
+  .footer {
+    width: 30rem;
+    margin-bottom: -10px;
+  }
+
+  .nav i,
+.nav i a {
+    font-size: 27px;
+  }
+
+  .nav p {
+    font-size: 15px;
+  }
+
+  .footer i {
+    font-size: 27px;
+  }
+
+  .footer textarea {
+    width: 500px;
+    height: 25px;
+    padding: 5px;
+  }
+
+  .subCtnr {
+    width: 40rem;
+    height: 100vh;
+  }
+
+  .chatBox {
+    height: 67rem;
+    width: 26rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  #msgSection {
+    height: 53.3rem;
+    width: 100%;
+  }
+
+  video {
+    height: 24rem;
+    width: 24rem;
+    flex: 1;
+  }
+}
+@media (max-width: 615px) and (min-width: 540px) {
+  html {
+    font-size: 43%;
+  }
+
+  .nav {
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    margin-top: 15px;
+  }
+
+  .nav i,
+.nav i a {
+    font-size: 27px;
+  }
+
+  .nav p {
+    font-size: 15px;
+  }
+
+  .footer i {
+    font-size: 27px;
+  }
+
+  .footer .textArea {
+    width: 50rem;
+  }
+
+  .footer textarea {
+    height: 30px;
+  }
+
+  .subCtnr {
+    width: 40rem;
+    height: 100vh;
+  }
+
+  .chatBox {
+    height: 73rem;
+    width: 40rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding: 0 15px 0 15px;
+  }
+
+  #msgSection {
+    height: 63.3rem;
+    width: 100%;
+  }
+
+  video {
+    height: 25rem;
+    width: 28rem;
+    max-width: 38rem;
+    flex: 1;
+  }
+}
+@media (max-width: 540px) and (min-width: 517px) {
+  html {
+    font-size: 40%;
+  }
+
+  .nav {
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 0 5px 0 5px;
+    margin-top: 15px;
+  }
+
+  .nav i,
+.nav i a {
+    font-size: 27px;
+  }
+
+  .nav p {
+    font-size: 15px;
+  }
+
+  .footer i {
+    font-size: 27px;
+  }
+
+  .footer .textArea {
+    width: 50rem;
+  }
+
+  .footer textarea {
+    height: 25px;
+  }
+
+  .subCtnr {
+    width: 50rem;
+    height: 100vh;
+  }
+
+  .chatBox {
+    height: 77rem;
+    width: 36rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  #msgSection {
+    height: 63.3rem;
+    width: 100%;
+  }
+
+  video {
+    height: 27rem;
+    width: 30rem;
+    max-width: 38rem;
+    flex: 1;
+  }
+}
+@media (max-width: 517px) {
+  .mainNav .mainNavSiteName {
+    font-size: 6rem;
+  }
+
+  .mainNavWlcm {
+    display: none;
+  }
+
+  .chatRoomName {
+    width: auto;
+  }
+
+  .nav {
+    top: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0 25px 0 25px;
+    margin-bottom: 10px;
+    position: fixed;
+  }
+
+  .footer {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    padding: 0 25px 0 25px;
+    border-top: 2rem solid rgba(0, 0, 0, 0);
+  }
+
+  .btn {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+  .nav i,
+.nav i a,
+.chatIcon i {
+    font-size: 34px;
+  }
+
+  .nav p {
+    font-size: 25px;
+  }
+
+  .footer i {
+    font-size: 40px;
+  }
+
+  .footer {
+    height: 14rem;
+  }
+
+  .footer .textArea {
+    width: 50rem;
+  }
+
+  .footer textarea {
+    height: 30px;
+    line-height: 20px;
+    font-size: 3rem;
+    width: 100%;
+  }
+
+  .message {
+    max-width: 50rem;
+    font-size: 3rem;
+  }
+
+  .incoming p {
+    border-radius: 0 4rem 4rem 4rem;
+  }
+
+  .message h2 {
+    font-size: 3.7rem;
+  }
+
+  .subCtnr {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+  }
+
+  .chatBox {
+    height: 90%;
+    width: 100%;
+    margin-top: 10rem;
+    bottom: 0;
+  }
+
+  #msgSection {
+    background: none;
+    height: 90%;
+    width: 100%;
+  }
+}
+@media (max-width: 517px) and (min-width: 467px) {
+  html {
+    font-size: 35%;
+  }
+
+  video {
+    height: 28rem;
+    width: 32rem;
+    max-width: 38rem;
+    flex: 1;
+  }
+
+  .mainNav .mainNavSiteName {
+    font-size: 6rem;
+  }
+
+  .mainNavWlcm {
+    display: none;
+  }
+
+  .chatRoomName {
+    width: auto;
+  }
+
+  .nav {
+    top: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0 25px 0 25px;
+    margin-bottom: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+
+  .footer {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    padding: 0 25px 0 25px;
+    border-top: 2rem solid rgba(0, 0, 0, 0);
+  }
+
+  .btn {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+  .nav i,
+.nav i a,
+.chatIcon i {
+    font-size: 34px;
+  }
+
+  .nav p {
+    font-size: 25px;
+  }
+
+  .footer i {
+    font-size: 40px;
+  }
+
+  .footer {
+    height: 14rem;
+  }
+
+  .footer .textArea {
+    width: 50rem;
+  }
+
+  .footer textarea {
+    height: 30px;
+    line-height: 20px;
+    font-size: 3rem;
+    width: 100%;
+  }
+
+  .message {
+    max-width: 50rem;
+    font-size: 3rem;
+  }
+
+  .incoming p {
+    border-radius: 0 4rem 4rem 4rem;
+  }
+
+  .message h2 {
+    font-size: 3.7rem;
+  }
+
+  .subCtnr {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+  }
+
+  .chatBox {
+    height: 90%;
+    width: 100%;
+    margin-top: 10rem;
+    bottom: 0;
+  }
+
+  #msgSection {
+    background: none;
+    height: 90%;
+    width: 100%;
+  }
+}
+@media (max-width: 467px) and (min-width: 423px) {
+  html {
+    font-size: 32%;
+  }
+
+  .nav {
+    top: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0 25px 0 25px;
+    margin-bottom: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+
+  .chatBox {
+    margin-top: 2.5rem;
+  }
+
+  video {
+    height: 30rem;
+    width: 38rem;
+    max-width: 40rem;
+    flex: 1;
+  }
+}
+@media (max-width: 423px) and (min-width: 375px) {
+  html {
+    font-size: 30%;
+  }
+
+  .nav {
+    top: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0 25px 0 25px;
+    margin-bottom: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+
+  video {
+    height: 33rem;
+    width: 28rem;
+    max-width: 40rem;
+    flex: 1;
+  }
+}
+@media (max-width: 375px) {
+  video {
+    height: 45rem;
+    max-width: 25rem;
+    flex: 1;
+  }
+
+  .mainNav .mainNavSiteName {
+    font-size: 6rem;
+  }
+
+  .mainNavWlcm {
+    display: none;
+  }
+
+  .message {
+    max-width: 30rem;
+    font-size: 3rem;
+  }
+
+  .chatRoomName {
+    width: auto;
+  }
+
+  .nav {
+    top: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0 25px 0 25px;
+    margin-bottom: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+
+  .footer {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    padding: 0 25px 0 25px;
+    border-top: 2rem solid rgba(0, 0, 0, 0);
+  }
+
+  .btn {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+  .nav i,
+.nav i a,
+.chatIcon i {
+    font-size: 27px;
+  }
+
+  .nav p {
+    font-size: 25px;
+  }
+
+  .footer i {
+    font-size: 27px;
+  }
+
+  .footer {
+    height: 14rem;
+  }
+
+  .footer .textArea {
+    width: 50rem;
+  }
+
+  .footer textarea {
+    height: 25px;
+    width: 100%;
+  }
+
+  .message {
+    max-width: 49rem;
+    font-size: 3.7rem;
+    padding: 2.2rem;
+  }
+
+  .incoming p {
+    border-radius: 0 4rem 4rem 4rem;
+  }
+
+  .message h2 {
+    font-size: 3.7rem;
+  }
+
+  .subCtnr {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+  }
+
+  .chatBox {
+    height: 90%;
+    width: 100%;
+    margin-top: 4.5rem;
+    bottom: 0;
+  }
+
+  #msgSection {
+    background: none;
+    height: 90%;
+    width: 100%;
+  }
+}
+@media (max-width: 375px) and (min-width: 344px) {
+  html {
+    font-size: 26%;
+  }
+
+  video {
+    height: 40rem;
+    width: 35rem;
+    max-width: 37rem;
+    flex: 1;
+  }
+}
+@media (max-width: 344px) and (min-width: 324px) {
+  html {
+    font-size: 27%;
+  }
+
+  video {
+    height: 38rem;
+    width: 30rem;
+    max-width: 45rem;
+    flex: 1;
+  }
+}
+@media (max-width: 324px) {
+  video {
+    height: 30rem;
+    width: 28rem;
+    flex: 1;
+  }
+
+  .footer .textArea {
+    width: 45rem;
+  }
+
+  .footer {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    padding: 0 20px 0 20px;
+    border-top: 2rem solid rgba(0, 0, 0, 0);
+  }
+}
+@media (max-width: 324px) and (min-width: 261px) {
+  html {
+    font-size: 24%;
+  }
+
+  video {
+    height: 45rem;
+    max-width: 40rem;
+    flex: 1;
+  }
+}
+@media (max-width: 261px) and (min-width: 224px) {
+  html {
+    font-size: 22%;
+  }
+
+  video {
+    height: 45rem;
+    max-width: 40rem;
+    flex: 1;
+  }
+}
+@media (max-width: 224px) and (min-width: 210px) {
+  html {
+    font-size: 20%;
+  }
+
+  video {
+    height: 45rem;
+    max-width: 40rem;
+    flex: 1;
+  }
+}
+@media (max-width: 210px) {
+  html {
+    font-size: 20%;
+  }
+
+  video {
+    height: 45rem;
+    max-width: 40rem;
+    flex: 1;
+  }
+
+  video {
+    height: 33rem;
+    width: 28rem;
+    flex: 1;
+  }
+}/*# sourceMappingURL=main.css.map */

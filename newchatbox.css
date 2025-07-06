@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.mainCtnr {
+  height: 100vh;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.mainNav {
+  height: 8vh;
+  width: 70%;
+  z-index: 10;
+  font-family: 'Fredoka One', cursive;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4.5rem 0 4.5rem;
+  background-color: rgba(42, 44, 65, 0.425);
+  transition: width 0.5s;
+}
+
+.mainNav h1 {
+  font-size: 2.5rem;
+  color: #e1f2ea;
+}
+
+.mainCtnr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#videoDiv {
+  width: 70%;
+  height: 92vh;
+  margin-top: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  transition: width 0.5s, height 0.5s;
+  overflow: hidden;
+}
+
+video {
+  height: 24rem;
+  width: 24rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0.1rem solid #03a9f4;
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 1rem 1rem 1rem;
+  transform: scaleX(-1);
+}
+
+.subCtnr {
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.chatBox {
+  height: 54rem;
+  width: 26rem;
+  border-radius: 0 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  position: absolute;
+  margin-top: 10vh;
+}
+
+.nav,
+.footer {
+  height: 5rem;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  border-radius: 0 1.5rem 0 0;
+}
+
+.nav {
+  justify-content: space-between;
+}
+
+#msgSection {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 41.3rem;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(159, 216, 255, 0.123), transparent);
+  -webkit-backdrop-filter: 0.5rem;
+          backdrop-filter: 0.5rem;
+  border-radius: 0rem 1.5rem 1.5rem 1.5rem;
+}
+
+textarea::-webkit-scrollbar,
+.msgSection::-webkit-scrollbar {
+  display: none;
+}
+
+.msgSection,
+textarea {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.backBtn,
+.mic {
+  height: 100%;
+  width: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backBtn i a,
+.mic i {
+  font-size: 3rem;
+  color: #03a9f4;
+  cursor: pointer;
+}
+
+.chatRoomName {
+  height: 100%;
+  width: 15rem;
+  color: white;
+  text-align: center;
+}
+
+.chatRoomName p {
+  line-height: 5rem;
+}
+
+.incoming,
+.outgoing {
+  height: auto;
+  cursor: text;
+}
+
+.message {
+  clear: both;
+  height: auto;
+  width: auto;
+  max-width: 20rem;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.incoming {
+  margin-left: 2rem;
+  float: left;
+}
+
+.incoming h2 {
+  color: #03a9f4;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.incoming p {
+  background: #e1f2ea;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  min-width: auto;
+  border-radius: 0 1.5rem 1.5rem 1.5rem;
+  border: 0.1rem solid #070707;
+  padding: 1rem;
+}
+
+.outgoing {
+  border-radius: 1.5rem 0rem 1.5rem 1.5rem;
+  background: #ffefaa;
+  padding: 1rem;
+  margin-right: 2rem;
+  float: right;
+}
+
+.footer {
+  border-radius: 0 0 1.5rem 1.5rem;
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+}
+
+.mic i {
+  color: #03a9f4;
+  font-size: 2.5rem;
+}
+
+.textArea {
+  height: 100%;
+  width: 16.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textArea textarea {
+  resize: none;
+  outline: none;
+  height: 2.5rem;
+  border-radius: 1rem 0rem 1rem 1rem;
+  padding: 0.3rem;
+  background: none;
+  color: white;
+  border: 0.1rem solid #03a9f4;
+}
+
+.userjoin {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: white;
+  text-align: center;
+  clear: both;
+  margin: 1.5rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+}/*# sourceMappingURL=main.css.map */

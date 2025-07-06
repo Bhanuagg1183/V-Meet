@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Alfa+Slab+One&family=Amaranth&family=Creepster&family=Fredoka+One&family=Indie+Flower&family=Lato&family=Luckiest+Guy&family=Readex+Pro&family=Rubik+Beastly&family=Source+Serif+Pro:ital,wght@1,900&family=Titan+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/presentCSS/home.css" />
+  <link rel="stylesheet" href="/presentCSS/bgAnim.css" />
+  <link rel="stylesheet" href="/presentCSS/srchBar.css" />
+  <link rel="stylesheet" href="/presentCSS/presentButtons.css" />
+
+
+  <title>Home</title>
+ 
+  <link rel="stylesheet" href="/presentCSS/presentResponsive.css" />
+
+</head>
+
+<body>
+  <div class="indexctnr" id="indexctnr">
+    <div class="area">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="header">VMEET.com</div>
+    <div class="subCtnr">
+      <div class="left">
+        <div class="indexTopLeftRooms">
+          <div class="indexTopLeftHeadingRooms">
+            <h1>Search Your Rooms Here</h1>
+
+            <div class="search-box" id="search-box">
+              <button class="btn-search">
+                <i class="material-icons">search</i>
+              </button>
+              <input type="text" class="input-search" id="input-search" placeholder="Type to Search..."
+                onkeyup="srch_area()" />
+            </div>
+          </div>
+          <div class="indexTopLeftRoomsName" id="indexTopLeftRoomsName">
+            {{#each dataOfRoomAndUserCount }}
+            <div class="roomBlock" id="roomBlock">
+              <div class="roomName" id="roomName">
+                <h1>{{nameOfTheRooms}}</h1>
+
+                <div class="roomJoinBtn">
+
+                  <a href="/{{nameOfTheRooms}}"><button class="button" data-pjax='#indexctnr'>join</button></a>
+                </div>
+              </div>
+              <div class="noOfUsers" id="noOfUsers">
+                <i class="material-icons" style="font-size: 48px">group</i>
+
+                <h2 id="noOfUsersH2Tag" class="noOfUsersH2Tag">{{countOfTheActiveUsers}}</h2>
+
+
+              </div>
+            </div>
+
+            {{/each}}
+          </div>
+        </div>
+
+      </div>
+      <div class="right">
+        <div class="indexTopRightUserName" id="indexTopRightUserName">
+          <h1>Enter Your User Name Here</h1>
+
+          <span class="material-icons-outlined"> account_circle </span>
+
+          <input type="text" name="userName" id="indexTopRightUserNameInput" placeholder="user Name" maxlength="10" />
+        </div>
+        <div class="indexBottomRightNext">
+          <header>Create Your Own Room</header>
+
+          <form action="/room" method="post">
+            <input type="text" name="room" id="" required="true" maxlength="10" />
+
+            <button type="submit" class="button">create</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/client.js"></script>
+  <script>
+    function submit() {
+      var names = document.getElementById("indexTopRightUserNameInput").value;
+
+      sessionStorage.setItem("allNames", JSON.stringify(names));
+
+
+    }
+
+    var evnt = document.getElementById("indexTopRightUserName")
+    evnt.addEventListener("input", e => {
+
+      sessionStorage.setItem("allNames", JSON.stringify(e.target.value));
+    })
+    document.getElementById("indexTopRightUserNameInput").value = JSON.parse(sessionStorage.getItem("myName"))
+
+
+    const opt = {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json; charset=UTF-8"
+      },
+
+    }
+    let countOfTheActiveUsersArr = []
+    var noOfUsers = document.getElementsByClassName("noOfUsers")
+    var roomRepresentations = document.getElementsByClassName("roomBlock")
+    var noOfUsersH2Tag = document.getElementsByClassName("noOfUsersH2Tag")
+    async function api() {
+
+      const response = await fetch('/api', opt)
+
+      const data = await response.json()
+
+      for (let count = 0; count < data.length; count++) {
+        noOfUsers[count].getElementsByTagName("h2")[0].innerText = await data[count].countOfTheActiveUsers
+
+  if(data[count].countOfTheActiveUsers == 0||data[count].countOfTheActiveUsers >= 5){
+
+  roomRepresentations[count].style.display = 'none'
+}
+
+
+      }
+
+
+
+    }
+    console.log('countOfTheActiveUsersArr')
+
+
+    setInterval(api, 10);
+
+
+
+
+
+  </script>
+
+
+
+
+
+
+</body>
+
+</html>
