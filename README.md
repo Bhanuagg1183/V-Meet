@@ -1,9 +1,9 @@
 
 # VMEET
 ## Problem Statement 
-in our day to day life we have become tedious and stressed that we have forgotten a term called leisure time (free time) and we have remembered that time, when pandemic starts all workers have started work remotely and they get a chance to explore themselves on the world of internet and try there hands out on platforms such as Omegle, Chatrandom, Vimeo, etc which gives a chance of Livestream, interaction with others, etc. such platforms came out with a boost of 1000s of active users
+In our day to day life we have become tedious and stressed that we have forgotten a term called leisure time (free time) and we have remembered that time, when pandemic starts all workers have started work remotely and they get a chance to explore themselves on the world of internet and try there hands out on platforms such as Omegle, Chatrandom, Vimeo, etc which gives a chance of Livestream, interaction with others, etc. such platforms came out with a boost of 1000s of active users
 
-problems we face using such platforms
+Problems we face using such platforms
 
 Security Threats,
 Cyberbullying,
