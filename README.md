@@ -61,8 +61,11 @@ VMEET allows you to socialize with worldwide users without sharing personal info
 - Can turn off screens and voices of another user so they may cant do any vulgar activity
 
 ## Technologies Used / Build With:
-- HTML5/CSS3/JavaScript
-- Node/Express
+- HTML5
+- CSS3
+- JavaScript
+- Node
+- Express
 - peer.js
 - socket.io
 
