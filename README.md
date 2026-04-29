@@ -18,7 +18,7 @@ We are facing these problems, but unknowingly we travel to such websites which p
 ## A BIG SPARK SOLUTION VMEET
 VMEET allows you to socialize with worldwide users without sharing personal information & provides you full of privacy as it does not take any personal info even gives you the option to close your mic and camera. It pairs random users in chat and video call set-ups, identified as ‘You’ and ‘user’ It is free and anonymous to use, with no account registration or age verification.
 
-### All you need to do is:
+### All you need to do is
 - Enter Your User Name
 - Search A Chat Room You Wanna Join OR Join Any Random Chatroom ,  Else You Can Create Your Own Room Too.
 - Wait A Moment Until New User Arrives Or if Users Are Present Over There Start Conversion With them
@@ -55,12 +55,12 @@ VMEET allows you to socialize with worldwide users without sharing personal info
 - Deploying frontend and backend based projects using Heroku
  
  
-## What Next:
+## What Next
 - Working more on privacy and security
 - Creating rooms with passwords so you may have conference with your personal groups
 - Can turn off screens and voices of another user so they may cant do any vulgar activity
 
-## Technologies Used / Build With:
+## Technologies Used / Build With
 - HTML5
 - CSS3
 - JavaScript
@@ -73,7 +73,7 @@ VMEET allows you to socialize with worldwide users without sharing personal info
 
 ## Deployment
 
-To deploy this project run
+To deploy this project run:
 
 ```bash
   npm run start
