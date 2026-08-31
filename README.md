@@ -14,7 +14,6 @@ In our day to day life we have become tedious and stressed that we have forgotte
 
 We are facing these problems, but unknowingly we travel to such websites which promote malicious acts and we become part of such activities. we don't have such kind of site which gives us full of control for your camera, mic, messages, etc even we are in the vision of such sites where our messages and our voice are recorded and be in business to make profit out of it.
 
-
 ## A BIG SPARK SOLUTION VMEET
 VMEET allows you to socialize with worldwide users without sharing personal information & provides you full of privacy as it does not take any personal info even gives you the option to close your mic and camera. It pairs random users in chat and video call set-ups, identified as ‘You’ and ‘user’ It is free and anonymous to use, with no account registration or age verification.
 
@@ -43,8 +42,6 @@ VMEET allows you to socialize with worldwide users without sharing personal info
 - #### Giving full access to control your mic and camera
     - This is one of the basic needs of all users for their privacy concern
 - #### Minimalist UI/UX
-
- 
  
 ## What We Learned!
  
@@ -53,7 +50,6 @@ VMEET allows you to socialize with worldwide users without sharing personal info
 - Learned how peer-to-peer networks work using peer.js 
 - Learned how to create real-time chat apps without using any database (socket.io)
 - Deploying frontend and backend based projects using Heroku
- 
  
 ## What Next
 - Working more on privacy and security
@@ -69,8 +65,6 @@ VMEET allows you to socialize with worldwide users without sharing personal info
 - peer.js
 - socket.io
 
-
-
 ## Deployment
 
 To deploy this project run:
@@ -78,10 +72,6 @@ To deploy this project run:
 ```bash
   npm run start
 ```
-
-
-
-
 
 ## 🔗 Links
 [![github VMEET](https://img.shields.io/badge/VMEET-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://vmeet-project.herokuapp.com/)
