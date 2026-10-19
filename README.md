@@ -1,5 +1,5 @@
 # VMEET
-
+<!-- Submitted in June 2022 in KUK under 8th Semester Major Project -->
 ## Problem Statement 
 In our day to day life we have become tedious and stressed that we have forgotten a term called leisure time (free time) and we have remembered that time, when pandemic starts all workers have started work remotely and they get a chance to explore themselves on the world of internet and try there hands out on platforms such as Omegle, Chatrandom, Vimeo, etc which gives a chance of Livestream, interaction with others, etc. such platforms came out with a boost of 1000s of active users.
 
