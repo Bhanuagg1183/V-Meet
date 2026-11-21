@@ -1,4 +1,4 @@
-# VMEET
+# V-MEET
 <!-- Virtual Meeting App -->
 <!-- Submitted in June 2022 in UIET,KUK under 8th Semester Major Project of B.Tech. CSE (2018-2022) -->
 
